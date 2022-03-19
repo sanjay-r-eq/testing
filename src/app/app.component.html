@@ -1,0 +1,12 @@
+<h1>Slider demo</h1>
+<section  class="slider-section">
+  <ngx-slick-carousel class="carousel"  #slickModal="slick-carousel"  [config]="slideConfig" >
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <img src="{{ slide.img }}" alt="" width="100%">
+  </div>
+  </ngx-slick-carousel>
+  <!-- <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+    <span class="slider__label sr-only"></span>
+  </div> -->
+</section>
+
